@@ -1,0 +1,428 @@
+body {
+    background-color: #191919; /*body to dark gray background color*/
+}
+/*menu bar*/
+.tab_b{
+    /*get rid of everything but the bottom border*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+    padding: 1vh;
+    margin: 0;
+    width: 21vw;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 2vh;
+    color: cyan;
+    text-align: center;
+    background-color: black;
+}
+.tab_b:hover{/*give the menu buttons a little border when hovered over*/
+    border: 1px solid #797979;
+}
+
+#inbox_b:hover{/*give the already select button slightly different hover properties so it still looks good*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+}
+a{/*take make sure the elemetns in menu bar share border and margin space*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#inbox_b{
+    color: orange;
+    background-color: #797979;
+    padding-top: 2vh;
+}
+#menu_bar{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+}
+
+/*main wrapper*/
+#inbox_wrapper{
+    border: 0;
+    margin: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: black;
+    width: 80vw;
+    height: 82.5vh;
+}
+
+/*defaults*/
+p, h2, label{
+    color: white;
+}
+
+label{
+    vertical-align: top;
+    position: relative;
+    top: 1vh;
+}
+
+textarea, input[type="text"]{
+    background-color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #595959;
+    border: none;
+    border-radius: 10px;
+    cursor: #494949;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: 0;
+    border: 0;
+    resize: none;
+}
+select{
+    height: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+}
+
+option{
+    background: black;
+    color: white;
+}
+
+main input[type="button"]{
+    background: transparent;
+    color: white;
+    border: 0;
+}
+
+/*new message or new thread*/
+#nm{
+    height: 7vh;
+    width: 12vw;
+    background: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 90vw;
+    z-index: 999;
+    border-top-left-radius: 10px;
+}
+
+#nm:hover{/*make it pop up*/
+    height: 40vh;
+    width: 100vw;
+    left: 0;
+    border-top-left-radius: 0px;
+    background-image: linear-gradient(#4169b3, #0059b3);
+}
+
+#nm_recipient{
+    width: 90vw;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#nm_message{
+    width: 90vw;
+    height: 15vh;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.nm_element{
+    margin: 0;
+    border: 0;
+}
+
+#nm_fieldset{
+    width: 100vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    border-radius: 10px;
+    border: 0;
+    margin: 0 auto;
+}
+
+#nm_label{
+    font-size: 2vw;
+    position: relative;
+    width: 7vw;
+    height: 5vh;
+    left: .5vw;
+    top: 1vh;
+    padding-top: .75vh;
+    padding-bottom: .75vh;
+    padding-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-variant: small-caps;
+    font-size: 2vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    word-wrap: hidden;
+}
+
+#nm:hover #nm_label{
+    left: 2vw;
+    height: auto;
+}
+
+#nm_select_submit{
+    position: relative;
+    left: 78vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 14vw;
+    margin: 0;
+    text-align: center;
+}
+
+#nm_label, #nm_select_submit{
+    border: 0;
+    background: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+#nm_select_submit *{
+    margin: auto;
+    border: 0;
+}
+
+/*thread*/
+#no_messages{
+    left: 8vw;
+}
+.thread_wrapper{
+    width: 84vw;
+    margin: auto;
+}
+
+.thread_content{
+    width: 80vw;
+    height: 27vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    background-color: #090909;
+    border-radius: 10px;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+
+/*get rid of scroll bar for threads*/
+.thread_content::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+.thread_content::-webkit-track-piece {
+    display: none;
+  color: white;
+  outline: 1px solid slategrey;
+}
+.thread_content::-webkit-scrollbar {
+    display: none;
+  background-color: white;
+  outline: 1px solid slategrey;
+}
+
+.thread_head{
+    text-indent: 8vw;
+    color: orange;
+    font-variant: small-caps;
+    font-size: 3vh;
+}
+
+/*message types*/
+.sent, .rec p{
+    word-wrap: break-word;
+}
+
+.sent{
+    width: 35vw;
+    border-style: solid;
+    border-color: #696969;
+    border-radius: 5px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.rec{
+    width: 35vw;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.sent .p i, b{
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;;
+}
+
+.msg{
+    width: 35vw;
+    background-image: linear-gradient(#4169b3, #0059b3);
+}
+
+.msg p{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+.frml{
+    width: 76vw;
+    background-color: black;
+}
+
+.frml p{
+   color: white;
+   font-family: "Times New Roman", Times, Serif;
+   font-size: 12px;
+}
+
+.love{
+    width: 35vw;
+    background-image: url("hearts.png");
+    background-size: 35vw;
+}
+
+.love p{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+.love:hover{
+    background-size: 50vw;
+}
+
+.intro{
+    width: 50vw;
+    background-color: #5BC236;
+}
+
+.intro p{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+.memo{
+    width: 50vw;
+    background-image: linear-gradient(#eed8bf, #d3b17d, #d8ad7f);
+}
+
+.memo p{
+    color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+/*response*/
+.respond_fields{
+    border: 0;
+    margin: 0;
+}
+
+.response_message{
+    width: 80vw;
+    height: 15vh;
+    border: 0;
+}
+
+.select_submit{
+    position: relative;
+    left: 70vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: 0;
+    width: 12vw;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(#115993, #0059b3);
+    color: white;
+    text-align: center;
+}
+
+/*threads nav*/
+#threads_nav{
+    background: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 998;
+    width: .25vw;
+    height: 30vh;
+    left: 0;
+    top: 20vh;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+#threads_nav:hover{/*make threads nav pop up*/
+    width: 6vw;
+}
+
+#threads_nav input[type="button"]{
+    text-align: left;
+    width: 10vw;
+    border: 0;
+    word-wrap: break-word;
+    background: orange;
+    color: white;
+    font-variant: small-caps;
+}
+
+/*make the scrollbars go away threads nav, keep some sttyling in case want to change codebase later*/
+#threads_nav::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+#threads_nav::-webkit-track-piece {
+    display: none;
+  color: white;
+  outline: 1px solid slategrey;
+}
+#threads_nav::-webkit-scrollbar {
+    display: none;
+  background-color: white;
+  outline: 1px solid slategrey;
+}
+
+#threads_nav_label{
+    font-size: 1.8vh;
+    color: orange;
+    font-variant: small-caps;
+    text-indent: .5vw;
+    font-weight: 200;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    text-indent: 1vw;
+}
+
+

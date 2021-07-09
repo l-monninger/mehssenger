@@ -1,0 +1,110 @@
+/*menu bar*/
+body {
+    background-color: #191919;
+}
+.tab_b{
+    /*remove borders except the bottom*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+    padding: 1vh;
+    margin: 0;
+    width: 21vw;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 2vh;
+    color: cyan;
+    text-align: center;
+    background-color: black;
+}
+.tab_b:hover{/*little border when hovered*/
+    border: 1px solid #797979;
+}
+#terminal_b:hover{/*selected button needs a little different styling when hovered to look good*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+}
+a{/*for good measure to make sure elements share border and margin space */
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#terminal_b{/*some extra styling for the selected button*/
+    color: orange;
+    background-color: #797979;
+    padding-top: 2vh;
+}
+#menu_bar{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+}
+
+/*terminal*/
+#terminal_all{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#large_text_field{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: auto;
+}
+#processed{
+    background-color: black;
+    font-family: Consolas, IBM-Plex-Mono, Roboto, Monospace;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5em;
+    width: 80vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    margin: 0;
+    border: none;
+    cursor: #494949;
+}
+#terminal{
+    background-color: black;
+    font-family: Consolas, IBM-Plex-Mono, Roboto, Monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: #595959;
+    line-height: 1.5em;
+    width: 80vw;
+    height: 75vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    border: none;
+    cursor: #494949;
+}
+#terminal:focus{
+    outline: none;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    text-indent: 1vw;
+}
+
+#cmd_reminders{
+    position: relative;
+    text-align: center;
+    color: #595959;
+    font-family: Consolas, IBM-Plex-Mono, Roboto, Monospace;
+}

@@ -1,0 +1,92 @@
+/*main elements */
+body{
+    background-image: url("birds.jpg");
+    background-size: 100vw;
+}
+form{
+    background: black; /*fallback background*/
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    /*should be realtively centered after these calls*/
+    top: 25vh;
+    left: 35.5vw;
+    overflow-x: hidden;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 10px;
+    width: 25vw;
+}
+
+/*text*/
+#meh{
+    color: orange;
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+h1{
+    font-size: 1.2em;
+    font-style: italic;
+    color: white;
+}
+
+#error{
+    color: orange;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 1.25;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/*inputs*/
+input[type="text"], input[type="password"] {
+    background-color: black;
+    opacity: .7;
+    color: #595959;
+    border: 0;
+    padding: 1vh;
+    width: 100%;
+}
+#user{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#email{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input[type="submit"]{
+    width: 30%;
+    margin: .4vh;
+    position: relative;
+    left: 40%;
+    padding: .5vh;
+    border: none;
+    border-radius: 10px;
+    border-color: #0059b3;/*for some reason there is a weird line at the bottom of my button if I don't do this*/
+    background-image: linear-gradient(#115993, #0059b3);
+    color: white;
+    outline: none;
+}
+
+#login{
+    position: relative;
+    left: 40%;
+    color: orange;
+    font-variant: small-caps;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: white; /*fallback background*/
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    text-indent: 1vw;
+}

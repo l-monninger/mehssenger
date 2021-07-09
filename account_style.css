@@ -1,0 +1,145 @@
+/*main elements*/
+body {
+    background-color: #191919;
+}
+/*menu bar*/
+.tab_b{
+    /*get rid of all borders except for the bottom border*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+    padding: 1vh;
+    margin: 0;
+    width: 21vw;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 2vh;
+    color: cyan;
+    text-align: center;
+    background-color: black;
+}
+.tab_b:hover{/*give the menu bar buttons a little border when hovered over*/
+    border: 1px solid #797979;
+}
+#account_b:hover{/*already selected button needs slightly different styling when hovered to look good*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+}
+a{/*to make sure elements share same border and margin space*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#account_b{/*little extra styling for the selected element*/
+    color: orange;
+    background-color: #797979;
+    padding-top: 2vh;
+}
+#menu_bar{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+}
+
+/*user info*/
+#username{
+    padding-right: 0;
+    display: inline-block;
+    margin-top: 4vh;
+    font-size: 6vh;
+    text-indent: 8vw;
+    font-variant: small-caps;
+    color: orange;
+    line-height: 1.2;
+}
+
+#user_email{
+    padding-left: 0;
+    display: inline-block;
+    margin-top: 0;
+    font-size: 3vh;
+    text-indent: 8vw;
+    color: cyan;
+    text-decoration: underline;
+    line-height: 1.2;
+}
+
+#logout{
+    position: relative;
+    left: 8vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*contact book*/
+#contact_book{
+    margin: auto;
+}
+
+fieldset{
+    margin: auto;
+    border: 0;
+    width: 86vw;
+}
+
+main input{
+    background-color: black;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #595959;
+    border: none;
+    border-radius: 10px;
+    cursor: #494949;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: 0;
+    border: 0;
+    resize: none;
+    width: 20vw;
+}
+
+.username{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px
+}
+
+.name, .email{
+    border-radius: 0px;
+}
+
+.cb_button{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(#115993, #0059b3);
+    color: white;
+}
+
+.fixed{
+    color: white;
+}
+
+.contact_book_label{
+    text-indent: 8vw;
+    font-size: 4vh;
+    font-variant: small-caps;
+    color: orange;
+    line-height: 1.2;
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    text-indent: 1vw;
+}

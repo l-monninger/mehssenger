@@ -1,0 +1,121 @@
+/*main elements*/
+body {
+    background-color: #191919;
+}
+/*menu bar*/
+.tab_b{
+    /*remove borders excpect bottom*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+    
+    padding: 1vh;
+    margin: 0;
+    width: 21vw;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 2vh;
+    color: cyan;
+    text-align: center;
+    background-color: black;
+}
+.tab_b:hover{/*when hovered give the menu bar button a little border*/
+    border: 1px solid #797979;
+}
+#about_b:hover{/*the selected button needs a little different property set when hovered to look good*/
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid #797979;
+}
+a{/*just making sure nothing has a border*/
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+#about_b{/*more stuff for the selected button*/
+    color: orange;
+    background-color: #797979;
+    padding-top: 2vh;
+}
+#menu_bar{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+}
+
+
+/*text*/
+article{
+    width: 84vw;
+    margin: auto;
+}
+
+h1, h2, h3{
+    font-variant: small-caps;
+    color: orange;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4vh;
+}
+
+h2{
+    font-size: 3vh;
+}
+h3{
+    font-size: 2.5vh;
+}
+i{
+    color: white;
+}
+
+p{
+    font-size: 2vh;
+    color: white;
+    line-height: 1.2;
+}
+
+.meh{
+    font-variant: small-caps;
+    color: orange;
+}
+
+img{
+    width: 60vw;
+    border: solid 1px white;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message_type{
+    width: auto;
+    margin-left: 0;
+    height: 4em; /*otherwise images of messages will be massive*/
+}
+
+pre{
+    color: white;
+    background: black;
+    padding: 3vh;
+}
+
+li{
+    color: white;
+    font-weight: 600
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255, 0.7);
+    width: 100%;
+    text-indent: 1vw;
+}
